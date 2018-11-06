@@ -1,14 +1,13 @@
-package com.epm.recipe.persistence.jdbc.config;
+package com.epm.recipe.persistence.db;
 
 import com.epm.recipe.persistence.RecipeRepository;
-import com.epm.recipe.persistence.jdbc.JdbcRecipeRepository;
+//import com.epm.recipe.persistence.jdbc.JdbcRecipeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.*;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
-import org.springframework.jdbc.datasource.embedded.EmbeddedDatabase;
-import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
-import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
 
 import javax.sql.DataSource;
 
@@ -16,7 +15,7 @@ import javax.sql.DataSource;
 @ComponentScan({ "com.epm.recipe.persistence.jdbc" })
 @Configuration
 
-public class  JdbcPersistenceConfiguration {
+public class JdbcPersistenceConfiguration {
     @Autowired
     DataSource dataSource;
 

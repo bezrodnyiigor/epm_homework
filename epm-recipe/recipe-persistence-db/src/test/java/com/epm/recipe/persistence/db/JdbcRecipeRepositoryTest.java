@@ -1,17 +1,15 @@
-package com.epm.recipe.persistence.jdbc;
+package com.epm.recipe.persistence.db;
 
 import com.epm.recipe.domain.Recipe;
 import com.epm.recipe.persistence.RecipeRepository;
-import com.epm.recipe.persistence.jdbc.config.JdbcPersistenceConfiguration;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-//import org.springframework.context.support.GenericXmlApplicationContext;
-import org.springframework.dao.EmptyResultDataAccessException;
 
 import java.util.List;
+
+//import org.springframework.context.support.GenericXmlApplicationContext;
 
 class JdbcRecipeRepositoryTest {
     private RecipeRepository repository;

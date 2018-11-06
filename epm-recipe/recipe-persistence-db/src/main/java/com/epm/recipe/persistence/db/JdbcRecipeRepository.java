@@ -1,4 +1,4 @@
-package com.epm.recipe.persistence.jdbc;
+package com.epm.recipe.persistence.db;
 
 import com.epm.recipe.domain.Recipe;
 import com.epm.recipe.persistence.RecipeRepository;
@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Objects;
 
 @Repository
-public class JdbcRecipeRepository  implements RecipeRepository{
+public class JdbcRecipeRepository implements RecipeRepository{
 
     @Autowired
     private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
